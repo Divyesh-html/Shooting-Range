@@ -70,17 +70,6 @@ function draw() {
       handleGameover(redBubbleGroup);
     }
     
-    if(blueBubbleGroup.collide(bulletGroup)){
-      handleBubbleCollision(blueBubbleGroup);
-    }
-
-    if(blueBubbleGroup.collide(bulletGroup)){
-      handleBubbleCollision();
-    }
-    
-    if(blueBubbleGroup.collide()){
-      handleBubbleCollision(blueBubbleGroup);
-    }
     
     if(blueBubbleGroup.collide(bulletGroup)){
       handleBubbleCollision(blueBubbleGroup);
@@ -129,15 +118,6 @@ function handleBubbleCollision(bubbleGroup){
 
     blast= createSprite(bullet.x+60, bullet.y, 50,50);
     blast.addImage(blastImg) 
-
-    blast = sprite(bullet.x+60, bullet.y, 50,50);
-    blast.addImage(blastImg) 
-
-    blast= createSprite(bullet.x+60, bullet.y, 50,50);
-    blast.add(blastImg) 
-
-     blast= createSprite(bullet.x+60, bullet.y, 50,50);
-    image(blastImg) 
     
     blast.scale=0.3
     blast.life=20
